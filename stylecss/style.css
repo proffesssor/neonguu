@@ -1,0 +1,361 @@
+@font-face {
+    font-family: "Blogger_Sans";
+    src: url("./Blogger_Sans.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Blogger_Sans_Bold";
+    src: url("./Blogger_Sans-Medium.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-color: #20426C;
+    font-family: "Blogger_Sans";
+}
+
+.none{
+    display: none !important;
+}
+
+.myrow{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-online{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.vkpost{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.menu {
+    background-color: #E51E40 !important;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.logo{
+    text-align: right;
+    position: absolute;
+    right: 30px;
+}
+
+.logo a img{
+    width: 70px;
+}
+
+.slider {
+    margin-top: 50px;
+    width: 90em;
+    height: 25em;
+    margin: 50px auto 0;
+} 
+
+.nav-link {
+    color: #FFFFFF !important;
+    font-size: 35px;
+}
+
+.nav-link:hover {
+    text-shadow: 0px 5px 5px #000;
+}
+
+.heading{
+    font-family: "Blogger_Sans_Bold";
+    color: white; 
+    text-align: center; 
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+}
+
+.footer {
+    width: 100%;
+    height: 5em;
+    margin-top: 2em;
+    background-color: #E51E40;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.cabinf {
+    padding-top: 0.5em;
+    text-align: center;
+    font-size: 35px;
+    color: #FFFFFF;
+    text-shadow: 0px 5px 5px #000;
+}
+
+.cabnum {
+    width: 10em;
+    height: 10em;
+    border: 5px solid #E51E40;
+    border-radius: 25px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.cabnumtext {
+    padding-top: 0.6em;
+    font-size: 60px;
+}
+
+.container {
+    padding-top: 4em;
+}
+
+.pcimg {
+    width: 10em;
+    height: 10em;
+}
+
+.pc {
+    margin-left: 1em;
+    color: #FFFFFF;
+}
+
+#pcs .row{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#pcs .rowrow{
+    display: flex;
+    width: 1300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.media{
+    width: 550px;
+    margin: 60px auto;
+}
+
+.media-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.media a img{
+    height: 70px;
+}
+
+@media (max-width: 550px){
+    #carouselExampleControls{
+        width: 95% !important;
+        margin: 30px auto 0;
+        height: auto !important;
+    }
+
+    .menu{
+        text-align: center;
+    }
+    .logo{
+        position: static;
+        text-align: center;
+    }
+
+    #information .card-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #information .card{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    #pcs.content{
+        height: auto;
+        margin-bottom: 0;
+    }
+    #pcs .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #pcs .rowrow{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    #information{
+        width: 100% !important;
+    }
+    .cabnum{
+        margin-right: auto;
+        margin-left: auto;
+        width: 96px;
+        height: 96px;
+    }
+    .cabnumtext{
+        padding-top: 12px;
+        
+    }
+    .rowrow .col{
+        margin-bottom: 20px;
+    }
+    .pcimg{
+        width: 7em;
+        height: 7em;
+    }
+    #competition{
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .myrow{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .myrow div{
+        margin-right: 0 !important;
+    }
+
+    #competition div{
+        width: 320px !important;
+        height: auto !important;
+        margin: auto !important;
+    }
+    #competition div iframe{
+        max-width: none !important;
+        vertical-align: middle !important;
+        width: 100% !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .ps{
+        width: max-content !important;
+        margin-top: 0px !important;
+    }
+    .psimg{
+        width: 110px !important;
+    }
+    .ps .pc {
+        height: auto !important;
+    }
+    .pc{
+        height: 167px;
+    }
+    .cabinf {
+        font-size: 30px;
+    }
+    .nav-item:not(:last-child){
+        display: none;
+    }
+    .accordion{
+        width: 100% !important;
+    }
+    .statistik{
+        display: none;
+    }
+    #stat{
+        display: none;
+    }
+    .media{
+        width: 100%;
+    }
+    .media-wrapper{
+        padding: 0 30px;
+        flex-wrap: wrap;
+    }
+    .media a img{
+        height: 50px;
+    }
+}
+
+#headerimg{
+    display: none;
+}
+
+.kabin-row{
+    display: flex;
+}
+
+.psimg{
+    width: 140px;
+}
+
+.ps{
+    margin-top: 40px;
+    width: 230px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.statistik{
+    width: 1000px;
+    background-color: #FFFFFF;
+    height: 700px;
+    margin: 0 auto;
+    overflow: scroll;
+}
+
+.statistik-header{
+    display: flex;
+    padding: 15px 10px;
+    align-items: center;
+    border-bottom: 2px solid #000;
+}
+
+.statistik-link{
+    font-size: 20px !important;
+    color: #000 !important;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 2px 3px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.statistik-link:hover, .active-bun-btn{
+    opacity: 0.6;
+}
+
+.statistik-item{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.statistik-text{
+    font-size: 18px !important;
+    color: #000 !important;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px #000 solid;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.timer{
+    width: max-content;
+}
+
+.accordion-body{
+    background-color: #20426C !important;
+}
+
+.accordion-button::after{
+    margin-left: 10px !important;
+}
